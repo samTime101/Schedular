@@ -1,0 +1,66 @@
+<!-- AUTHOR : SAMIP REGMi -->
+<!-- SCHEDULER -->
+<!doctype html>
+<html>
+    <head>
+        <title>Scheduler</title>
+        <meta name="author" content="Samip Regmi [samTime101]" />
+        <style>
+            table {
+                margin: auto;
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 50%;
+                table-layout: fixed;
+                /* height: 100vh; */
+            }
+
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            div {
+                margin: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="radio" id="select1" name="select" value="1" checked />
+        <label for="select1">L4CG: 1</label><br />
+        <input type="radio" id="select2" name="select" value="2" />
+        <label for="select2">L4CG: 2</label><br />
+        <input type="radio" id="select3" name="select" value="3" />
+        <label for="select3">L4CG: 3</label><br />
+        <input type="radio" id="select4" name="select" value="4" />
+        <label for="select4">L4CG: 4</label>
+        <table>
+            <tr>
+                <th>SCHEDULE</th>
+                <th>DAY</th>
+            </tr>
+            <tr>
+                <td rowspan="6" id="content"></td>
+                <td class="day">Sunday</td>
+            </tr>
+            <tr>
+                <td class="day">Monday</td>
+            </tr>
+            <tr>
+                <td class="day">Tuesday</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday</td>
+            </tr>
+            <tr>
+                <td class="day">Thursday</td>
+            </tr>
+            <tr>
+                <td class="day">Friday</td>
+            </tr>
+        </table>
+    </body>
+    <script src="./js/script.js"></script>
+</html>
