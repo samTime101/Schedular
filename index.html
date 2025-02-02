@@ -1,18 +1,91 @@
-<!-- AUTHOR : SAMIP REGMi -->
-<!-- SCHEDULER -->
+<!-- PAGE STYLING FROM MY OWN : samipregmi.ct.ws/-->
+<!-- SCHEDULAR -->
+<!-- SAMIP REGMI -->
+
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>Scheduler</title>
-        <meta name="author" content="Samip Regmi [samTime101]" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Official website of Samip Regmi, a simple person who just finds coding interesting ..."
+        />
+        <meta
+            name="keywords"
+            content="Samip Regmi, samip101, SamipTime101, samipregmi.com, who is Samip Regmi, a simple person who just finds coding interesting ..."
+        />
+        <meta name="author" content="Samip Regmi" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://samipregmi.ct.ws/" />
+        <meta property="og:title" content="Samip Regmi" />
+        <meta
+            property="og:description"
+            content="Explore the projects, blogs etc"
+        />
+        <meta
+            property="og:image"
+            content="https://samiptime101.web.app/dragon.svg"
+        />
+        <meta property="og:url" content="https://samipregmi.ct.ws/" />
+        <meta property="og:type" content="website" />
+        <link
+            rel="icon"
+            href="https://samiptime101.web.app/dragon.svg"
+            type="image/x-icon"
+        />
+        <title>Samip Regmi</title>
         <style>
+            @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
+            body {
+                background-color: black;
+                font-family: "Fira Mono", serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding-top: 5vh;
+            }
+
+            div {
+                max-width: 600px;
+                color: white;
+                font-size: small;
+            }
+
+            a {
+                color: aqua;
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+            }
+
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+            .main {
+                text-align: center;
+                font-family: "Times New Roman";
+            }
+
+            .geek1 {
+                font-size: 36px;
+                font-weight: bold;
+                color: black;
+                text-align: center;
+            }
+
+            .geek2 {
+                text-align: center;
+                color: black;
+            }
             table {
-                margin: auto;
-                font-family: arial, sans-serif;
+                margin: 2vh auto;
                 border-collapse: collapse;
-                width: 50%;
+                color: white;
+                width: 100%;
                 table-layout: fixed;
-                /* height: 100vh; */
             }
 
             td,
@@ -20,47 +93,65 @@
                 border: 1px solid #dddddd;
                 text-align: left;
                 padding: 8px;
+                color: white;
             }
-            div {
-                margin: auto;
-                width: 50%;
+            #grp-selection {
+                display: flex;
+                justify-content: center;
+                margin: 3vh;
             }
         </style>
     </head>
+
     <body>
-        <input type="radio" id="select1" name="select" value="1" checked />
-        <label for="select1">L4CG: 1</label><br />
-        <input type="radio" id="select2" name="select" value="2" />
-        <label for="select2">L4CG: 2</label><br />
-        <input type="radio" id="select3" name="select" value="3" />
-        <label for="select3">L4CG: 3</label><br />
-        <input type="radio" id="select4" name="select" value="4" />
-        <label for="select4">L4CG: 4</label>
-        <table>
-            <tr>
-                <th>SCHEDULE</th>
-                <th>DAY</th>
-            </tr>
-            <tr>
-                <td rowspan="6" id="content"></td>
-                <td class="day">Sunday</td>
-            </tr>
-            <tr>
-                <td class="day">Monday</td>
-            </tr>
-            <tr>
-                <td class="day">Tuesday</td>
-            </tr>
-            <tr>
-                <td class="day">Wednesday</td>
-            </tr>
-            <tr>
-                <td class="day">Thursday</td>
-            </tr>
-            <tr>
-                <td class="day">Friday</td>
-            </tr>
-        </table>
+        <div>
+            <!-- REFERENCE: https://www.geeksforgeeks.org/html-marquee-tag/ -->
+            <marquee class="marq" bgcolor="aqua" direction="up" loop="">
+                <div class="geek1">On Development</div>
+                <div class="geek2">Welcome to samipregmi.wt.cs/schedular</div>
+            </marquee>
+            <div id="grp-selection">
+                <input
+                    type="radio"
+                    id="select1"
+                    name="select"
+                    value="1"
+                    checked
+                />
+                <label for="select1">L4CG: 1</label><br />
+                <input type="radio" id="select2" name="select" value="2" />
+                <label for="select2">L4CG: 2</label><br />
+                <input type="radio" id="select3" name="select" value="3" />
+                <label for="select3">L4CG: 3</label><br />
+                <input type="radio" id="select4" name="select" value="4" />
+                <label for="select4">L4CG: 4</label>
+            </div>
+            <table>
+                <tr>
+                    <th>SCHEDULE</th>
+                    <th>DAY</th>
+                </tr>
+                <tr>
+                    <td rowspan="6" id="content"></td>
+                    <td class="day">Sunday</td>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                </tr>
+            </table>
+        </div>
     </body>
     <script src="./js/script.js"></script>
 </html>

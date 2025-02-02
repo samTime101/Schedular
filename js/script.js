@@ -34,7 +34,7 @@ var selection = document.querySelectorAll(".day");
 
 selection.forEach((item) => {
   if (item.innerText === Today) {
-    item.style.backgroundColor = "#dddddd";
+    item.style.backgroundColor = "#013a3d";
     day = item.innerText;
     updateContent();
   }
