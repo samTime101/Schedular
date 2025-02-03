@@ -20,6 +20,11 @@ CREATE TABLE IF NOT EXISTS class_schedule (
 );
 ```
 
+Sample : data
+```sql
+'<Day>','8 AM to 10 AM','Lecture','<Module_Code>','<Course_Name>','<Lecturer_Name>','<Group_Name>','<Class_Name>'
+```
+
 ### TODO
 - [x] Add schedule data in MySql
 - [x] Connect php to mySql
