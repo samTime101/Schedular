@@ -50,14 +50,18 @@ selection.forEach((item) => {
 
 async function updateContent() {
   if (!day || !group) return;
-
+  document.querySelector("#content").innerHTML = " ";
   var response = await fetch(
-    `http://localhost/schedule/php/script.php?day=${day}&group=${group}`,
+    `http://localhost/schedule/php/script.php?day=${day}&group=L4CG${group}`,
   );
 
   var data = await response.json();
-  document.querySelector("#content").innerText =
-    `Day: ${data["day"]} Group: ${data["group"]}`;
+  // console.log(data);
+  data.forEach((item) => {
+    // console.log(item["Lecturer"]);
+    document.querySelector("#content").innerHTML +=
+      `Group: ${item["Group_Name"]}<br>Day: ${item["Day"]}<br>Time: ${item["Time"]}<br>${item["Lecturer"]}<br>${item["Room"]}<hr><br>`;
+  });
 }
 
-console.log(`${day} ${group}`);
+console.log(`${day} L4CG${group}`);

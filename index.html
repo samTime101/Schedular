@@ -86,6 +86,7 @@
                 color: white;
                 width: 100%;
                 table-layout: fixed;
+                height: 300px;
             }
 
             td,
@@ -95,10 +96,20 @@
                 padding: 8px;
                 color: white;
             }
+            th {
+                text-align: center;
+            }
+            .day:hover {
+                background-color: red;
+                cursor: pointer;
+            }
             #grp-selection {
                 display: flex;
                 justify-content: center;
                 margin: 3vh;
+            }
+            #content {
+                height: 300px;
             }
         </style>
     </head>
@@ -107,8 +118,8 @@
         <div>
             <!-- REFERENCE: https://www.geeksforgeeks.org/html-marquee-tag/ -->
             <marquee class="marq" bgcolor="aqua" direction="up" loop="">
-                <div class="geek1">On Development</div>
-                <div class="geek2">Welcome to samipregmi.wt.cs/schedular</div>
+                <div class="geek1">Schedular</div>
+                <div class="geek2">Welcome to samipregmi.wt.cs/schedule</div>
             </marquee>
             <div id="grp-selection">
                 <input
